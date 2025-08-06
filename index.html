@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="page">
+        <div id="container">
+            <h1>Currency Converter</h1>
+            <div class="amount">
+                <p class="text">Enter Amount</p>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+
+            <div id="middlepart">
+                <div class="currency">
+                <p class="text">From</p>
+                <div class="currency-input">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="Flag" id="fromFlag">
+                    <select name="From Currency" id="fromCurrency">
+                        <option value="USD" selected>USD</option>
+                        <option value="INR">INR</option>
+                        <option value="AUD">AUD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                    </div>
+                </div>
+                    <i id="swap-icon" class="fa-solid fa-right-left"></i>
+                
+                <div class="currency">
+                    <p class="text">To</p>
+                    <div class="currency-input">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="Flag" id="toFlag">
+                        <select name="To Currency" id="toCurrency">
+                            <option value="USD">USD</option>
+                            <option value="INR" selected>INR</option>
+                            <option value="AUD">AUD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <button id="convertBtn">Get Exchange Rate</button>
+            
+            <div class="result">
+                <p id="resultText">1 USD = 83.12 INR</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

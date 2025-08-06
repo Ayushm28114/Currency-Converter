@@ -11,7 +11,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+}
+*::selection{
+    background-color: white;
+    color: #95c11e;
 }
 h1{
     color: #f0e6f1;
@@ -166,3 +169,4 @@ h1{
         order: 2;
     }
 }
+
